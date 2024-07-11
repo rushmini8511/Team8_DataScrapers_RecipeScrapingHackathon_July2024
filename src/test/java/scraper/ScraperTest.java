@@ -1,4 +1,4 @@
-package resources;
+package scraper;
 
 import java.io.IOException;
 
@@ -10,8 +10,8 @@ import org.testng.annotations.Test;
 
 import utilities.ExcelUtilities;
 
-public class Resources {
-	
+public class ScraperTest {
+
 	@Test
 	public void test1() throws IOException {
 		
@@ -65,5 +65,4 @@ try {
 	
 	
 }
-
 }
