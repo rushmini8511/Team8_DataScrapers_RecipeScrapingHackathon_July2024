@@ -2,11 +2,20 @@ package utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
+
+
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
+
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -21,7 +30,7 @@ public class ExcelUtilities {
 	public XSSFCell cell;
 	public CellStyle style;   
 	String path;
-	public File jsonFile;
+	
 
 	
 	public ExcelUtilities(String path)
@@ -83,4 +92,29 @@ public class ExcelUtilities {
 		fi.close();
 		fo.close();
 	}		
+	
+	public List<String> getEliminatedList(String filePath, int colunum, String sheetname) {
+	
+		List<String> eliminatedList = new ArrayList<String>();
+		try {
+			FileInputStream fis = new FileInputStream(filePath);
+			workbook = new XSSFWorkbook(fis);
+			
+			XSSFSheet sheet = workbook.getSheet(sheetname);
+			
+			Iterator<Row> rowiterator = sheet.rowIterator(); 
+			while (rowiterator.hasNext()) {
+				Row row = rowiterator.next();
+				Cell cell = row.getCell(colunum);
+				if (cell != null) {
+					eliminatedList.add(cell.getStringCellValue());
+                    }
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		return eliminatedList;
+		
+	}
 }
