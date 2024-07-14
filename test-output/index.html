@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.scrappingReceipe" class="method navigator-link" hash-for-method="receipescrapping">receipescrapping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.scrappingReceipe</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="receipescrapping">
+                  </a> <!-- receipescrapping -->
+                  <span class="method-name">receipescrapping</span>
+                  <div class="stack-trace">======= EXCEPTION START ========
+Exception class=[org.htmlunit.corejs.javascript.EvaluatorException]
+org.htmlunit.ScriptException: missing ; before statement (https://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b4ad02f1e369bf9#1)
+	at org.htmlunit.javascript.JavaScriptEngine$HtmlUnitContextAction.run(JavaScriptEngine.java:959)
+	at org.htmlunit.corejs.javascript.Context.call(Context.java:585)
+	at org.htmlunit.corejs.javascript.ContextFactory.call(ContextFactory.java:481)
+	at org.htmlunit.javascript.HtmlUnitContextFactory.callSecured(HtmlUnitContextFactory.java:314)
+	at org.htmlunit.javascript.JavaScriptEngine.compile(JavaScriptEngine.java:731)
+	at org.htmlunit.javascript.JavaScriptEngine.compile(JavaScriptEngine.java:109)
+	at org.htmlunit.html.HtmlPage.loadJavaScriptFromUrl(HtmlPage.java:1124)
+	at org.htmlunit.html.HtmlPage.loadExternalJavaScriptFile(HtmlPage.java:1015)
+	at org.htmlunit.html.ScriptElementSupport.executeScriptIfNeeded(ScriptElementSupport.java:187)
+	at org.htmlunit.html.ScriptElementSupport$1.execute(ScriptElementSupport.java:111)
+	at org.htmlunit.html.ScriptElementSupport.onAllChildrenAddedToPage(ScriptElementSupport.java:134)
+	at org.htmlunit.html.HtmlScript.onAllChildrenAddedToPage(HtmlScript.java:192)
+	at org.htmlunit.html.parser.neko.HtmlUnitNekoDOMBuilder.endElement(HtmlUnitNekoDOMBuilder.java:508)
+	at org.htmlunit.cyberneko.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:291)
+	at org.htmlunit.html.parser.neko.HtmlUnitNekoDOMBuilder.endElement(HtmlUnitNekoDOMBuilder.java:454)
+	at org.htmlunit.cyberneko.HTMLTagBalancer.callEndElement(HTMLTagBalancer.java:1220)
+	at org.htmlunit.cyberneko.HTMLTagBalancer.endElement(HTMLTagBalancer.java:1164)
+	at org.htmlunit.cyberneko.filters.DefaultFilter.endElement(DefaultFilter.java:168)
+	at org.htmlunit.cyberneko.filters.NamespaceBinder.endElement(NamespaceBinder.java:266)
+	at org.htmlunit.cyberneko.HTMLScanner$ContentScanner.scanEndElement(HTMLScanner.java:3208)
+	at org.htmlunit.cyberneko.HTMLScanner$ContentScanner.scan(HTMLScanner.java:2098)
+	at org.htmlunit.cyberneko.HTMLScanner.scanDocument(HTMLScanner.java:909)
+	at org.htmlunit.cyberneko.HTMLConfiguration.parse(HTMLConfiguration.java:336)
+	at org.htmlunit.cyberneko.HTMLConfiguration.parse(HTMLConfiguration.java:294)
+	at org.htmlunit.cyberneko.xerces.parsers.AbstractXMLDocumentParser.parse(AbstractXMLDocumentParser.java:80)
+	at org.htmlunit.html.parser.neko.HtmlUnitNekoDOMBuilder.parse(HtmlUnitNekoDOMBuilder.java:752)
+	at org.htmlunit.html.parser.neko.HtmlUnitNekoHtmlParser.parse(HtmlUnitNekoHtmlParser.java:202)
+	at org.htmlunit.DefaultPageCreator.createHtmlPage(DefaultPageCreator.java:307)
+	at org.htmlunit.DefaultPageCreator.createPage(DefaultPageCreator.java:226)
+	at org.htmlunit.WebClient.loadWebResponseInto(WebClient.java:651)
+	at org.htmlunit.WebClient.loadWebResponseInto(WebClient.java:545)
+	at org.htmlunit.WebClient.getPage(WebClient.java:463)
+	at org.htmlunit.WebClient.getPage(WebClient.java:370)
+	at org.htmlunit.WebClient.getPage(WebClient.java:508)
+	at org.htmlunit.WebClient.getPage(WebClient.java:490)
+	at tests.scrappingReceipe.receipescrapping(scrappingReceipe.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.htmlunit.corejs.javascript.EvaluatorException: missing ; before statement (https://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b4ad02f1e369bf9#1)
+	at org.htmlunit.javascript.HtmlUnitContextFactory$HtmlUnitErrorReporter.error(HtmlUnitContextFactory.java:398)
+	at org.htmlunit.corejs.javascript.Parser.addError(Parser.java:257)
+	at org.htmlunit.corejs.javascript.Parser.reportError(Parser.java:336)
+	at org.htmlunit.corejs.javascript.Parser.reportError(Parser.java:327)
+	at org.htmlunit.corejs.javascript.Parser.reportError(Parser.java:320)
+	at org.htmlunit.corejs.javascript.Parser.autoInsertSemicolon(Parser.java:1322)
+	at org.htmlunit.corejs.javascript.Parser.statementHelper(Parser.java:1297)
+	at org.htmlunit.corejs.javascript.Parser.statement(Parser.java:1137)
+	at org.htmlunit.corejs.javascript.Parser.parse(Parser.java:631)
+	at org.htmlunit.corejs.javascript.Parser.parse(Parser.java:561)
+	at org.htmlunit.corejs.javascript.Context.parse(Context.java:2547)
+	at org.htmlunit.corejs.javascript.Context.compileImpl(Context.java:2478)
+	at org.htmlunit.corejs.javascript.Context.compileString(Context.java:1441)
+	at org.htmlunit.javascript.HtmlUnitContextFactory$TimeoutContext.compileString(HtmlUnitContextFactory.java:192)
+	at org.htmlunit.corejs.javascript.Context.compileString(Context.java:1429)
+	at org.htmlunit.javascript.JavaScriptEngine$1.doRun(JavaScriptEngine.java:722)
+	at org.htmlunit.javascript.JavaScriptEngine$HtmlUnitContextAction.run(JavaScriptEngine.java:942)
+	... 63 more
+Enclosed exception: 
+org.htmlunit.corejs.javascript.EvaluatorException: missing ; before statement (https://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b4ad02f1e369bf9#1)
+	at org.htmlunit.javascript.HtmlUnitContextFactory$HtmlUnitErrorReporter.error(HtmlUnitContextFactory.java:398)
+	at org.htmlunit.corejs.javascript.Parser.addError(Parser.java:257)
+	at org.htmlunit.corejs.javascript.Parser.reportError(Parser.java:336)
+	at org.htmlunit.corejs.javascript.Parser.reportError(Parser.java:327)
+	at org.htmlunit.corejs.javascript.Parser.reportError(Parser.java:320)
+	at org.htmlunit.corejs.javascript.Parser.autoInsertSemicolon(Parser.java:1322)
+	at org.htmlunit.corejs.javascript.Parser.statementHelper(Parser.java:1297)
+	at org.htmlunit.corejs.javascript.Parser.statement(Parser.java:1137)
+	at org.htmlunit.corejs.javascript.Parser.parse(Parser.java:631)
+	at org.htmlunit.corejs.javascript.Parser.parse(Parser.java:561)
+	at org.htmlunit.corejs.javascript.Context.parse(Context.java:2547)
+	at org.htmlunit.corejs.javascript.Context.compileImpl(Context.java:2478)
+	at org.htmlunit.corejs.javascript.Context.compileString(Context.java:1441)
+	at org.htmlunit.javascript.HtmlUnitContextFactory$TimeoutContext.compileString(HtmlUnitContextFactory.java:192)
+	at org.htmlunit.corejs.javascript.Context.compileString(Context.java:1429)
+	at org.htmlunit.javascript.JavaScriptEngine$1.doRun(JavaScriptEngine.java:722)
+	at org.htmlunit.javascript.JavaScriptEngine$HtmlUnitContextAction.run(JavaScriptEngine.java:942)
+	at org.htmlunit.corejs.javascript.Context.call(Context.java:585)
+	at org.htmlunit.corejs.javascript.ContextFactory.call(ContextFactory.java:481)
+	at org.htmlunit.javascript.HtmlUnitContextFactory.callSecured(HtmlUnitContextFactory.java:314)
+	at org.htmlunit.javascript.JavaScriptEngine.compile(JavaScriptEngine.java:731)
+	at org.htmlunit.javascript.JavaScriptEngine.compile(JavaScriptEngine.java:109)
+	at org.htmlunit.html.HtmlPage.loadJavaScriptFromUrl(HtmlPage.java:1124)
+	at org.htmlunit.html.HtmlPage.loadExternalJavaScriptFile(HtmlPage.java:1015)
+	at org.htmlunit.html.ScriptElementSupport.executeScriptIfNeeded(ScriptElementSupport.java:187)
+	at org.htmlunit.html.ScriptElementSupport$1.execute(ScriptElementSupport.java:111)
+	at org.htmlunit.html.ScriptElementSupport.onAllChildrenAddedToPage(ScriptElementSupport.java:134)
+	at org.htmlunit.html.HtmlScript.onAllChildrenAddedToPage(HtmlScript.java:192)
+	at org.htmlunit.html.parser.neko.HtmlUnitNekoDOMBuilder.endElement(HtmlUnitNekoDOMBuilder.java:508)
+	at org.htmlunit.cyberneko.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:291)
+	at org.htmlunit.html.parser.neko.HtmlUnitNekoDOMBuilder.endElement(HtmlUnitNekoDOMBuilder.java:454)
+	at org.htmlunit.cyberneko.HTMLTagBalancer.callEndElement(HTMLTagBalancer.java:1220)
+	at org.htmlunit.cyberneko.HTMLTagBalancer.endElement(HTMLTagBalancer.java:1164)
+	at org.htmlunit.cyberneko.filters.DefaultFilter.endElement(DefaultFilter.java:168)
+	at org.htmlunit.cyberneko.filters.NamespaceBinder.endElement(NamespaceBinder.java:266)
+	at org.htmlunit.cyberneko.HTMLScanner$ContentScanner.scanEndElement(HTMLScanner.java:3208)
+	at org.htmlunit.cyberneko.HTMLScanner$ContentScanner.scan(HTMLScanner.java:2098)
+	at org.htmlunit.cyberneko.HTMLScanner.scanDocument(HTMLScanner.java:909)
+	at org.htmlunit.cyberneko.HTMLConfiguration.parse(HTMLConfiguration.java:336)
+	at org.htmlunit.cyberneko.HTMLConfiguration.parse(HTMLConfiguration.java:294)
+	at org.htmlunit.cyberneko.xerces.parsers.AbstractXMLDocumentParser.parse(AbstractXMLDocumentParser.java:80)
+	at org.htmlunit.html.parser.neko.HtmlUnitNekoDOMBuilder.parse(HtmlUnitNekoDOMBuilder.java:752)
+	at org.htmlunit.html.parser.neko.HtmlUnitNekoHtmlParser.parse(HtmlUnitNekoHtmlParser.java:202)
+	at org.htmlunit.DefaultPageCreator.createHtmlPage(DefaultPageCreator.java:307)
+	at org.htmlunit.DefaultPageCreator.createPage(DefaultPageCreator.java:226)
+	at org.htmlunit.WebClient.loadWebResponseInto(WebClient.java:651)
+	at org.htmlunit.WebClient.loadWebResponseInto(WebClient.java:545)
+	at org.htmlunit.WebClient.getPage(WebClient.java:463)
+	at org.htmlunit.WebClient.getPage(WebClient.java:370)
+	at org.htmlunit.WebClient.getPage(WebClient.java:508)
+	at org.htmlunit.WebClient.getPage(WebClient.java:490)
+	at tests.scrappingReceipe.receipescrapping(scrappingReceipe.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+== CALLING JAVASCRIPT ==
+500 Server error
+======= EXCEPTION END ========
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/7c/nw2nwy292qzd_lqxrpwl2_2h0000gn/T/testng-eclipse-1931748594/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.scrappingReceipe&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;receipescrapping&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.scrappingReceipe --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'receipescrapping')
+data.setCell(0, 2, 'tests.scrappingReceipe')
+data.setCell(0, 3, 8723);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.scrappingReceipe</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">receipescrapping</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
