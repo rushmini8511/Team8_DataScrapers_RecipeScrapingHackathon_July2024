@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.scrappingReceipe">
+      <class name="tests.RecipeScraper">
         <methods>
-          <include name="receipescrapping"/>
+          <include name="scrapReceipe"/>
         </methods>
-      </class> <!-- tests.scrappingReceipe -->
+      </class> <!-- tests.RecipeScraper -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
