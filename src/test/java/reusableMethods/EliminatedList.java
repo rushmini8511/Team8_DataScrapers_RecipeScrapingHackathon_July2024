@@ -1,5 +1,5 @@
 package reusableMethods;
 
-public class List {
+public class EliminatedList {
 
 }
