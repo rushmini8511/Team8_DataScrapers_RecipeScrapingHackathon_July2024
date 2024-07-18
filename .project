@@ -26,5 +26,20 @@
 			<type>1</type>
 			<location>D:/Rathna/Team8_DataScrapers_RecipeScrapingHackathonJuly2024/Elimination List.xlsx</location>
 		</link>
+		<link>
+			<name>src/test/resources/Data/IngredientsAndComorbidities-ScrapperHackathon.xlsx</name>
+			<type>1</type>
+			<location>D:/Rathna/Team8_DataScrapers_RecipeScrapingHackathonJuly2024/IngredientsAndComorbidities-ScrapperHackathon.xlsx</location>
+		</link>
+		<link>
+			<name>src/test/resources/Data/Team8_DataScraper_Allergies.xlsx</name>
+			<type>1</type>
+			<location>D:/Rathna/Team8_DataScrapers_RecipeScrapingHackathonJuly2024/Team8_DataScraper_Allergies.xlsx</location>
+		</link>
+		<link>
+			<name>src/test/resources/Data/Team8_DataScrapers_ScrapedRecipes.xlsx</name>
+			<type>1</type>
+			<location>C:/Users/chand/Documents/Team8_DataScrapers_ScrapedRecipes.xlsx</location>
+		</link>
 	</linkedResources>
 </projectDescription>
