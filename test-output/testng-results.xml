@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-14T23:35:53 EDT" name="Default suite" finished-at="2024-07-14T23:37:47 EDT" duration-ms="113714">
+  <suite started-at="2024-07-17T23:31:18 EDT" name="Default suite" finished-at="2024-07-17T23:35:54 EDT" duration-ms="275295">
     <groups>
     </groups>
-    <test started-at="2024-07-14T23:35:53 EDT" name="Default test" finished-at="2024-07-14T23:37:47 EDT" duration-ms="113714">
-      <class name="scraper.Scraper">
-        <test-method signature="clickonReceipe()[pri:0, instance:scraper.Scraper@33d512c1]" started-at="2024-07-14T23:35:53 EDT" name="clickonReceipe" finished-at="2024-07-14T23:37:47 EDT" duration-ms="113641" status="PASS">
+    <test started-at="2024-07-17T23:31:18 EDT" name="Default test" finished-at="2024-07-17T23:35:54 EDT" duration-ms="275295">
+      <class name="scraper.RecipeScraper">
+        <test-method signature="scrapReceipe()[pri:0, instance:scraper.RecipeScraper@c2db68f]" started-at="2024-07-17T23:31:18 EDT" name="scrapReceipe" finished-at="2024-07-17T23:35:54 EDT" duration-ms="275203" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickonReceipe -->
-      </class> <!-- scraper.Scraper -->
+        </test-method> <!-- scrapReceipe -->
+      </class> <!-- scraper.RecipeScraper -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
